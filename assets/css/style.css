@@ -1,0 +1,139 @@
+/* Premium Cyber-Security Dark Theme */
+:root {
+    --bg-dark: #0f172a;        /* Deep Navy Blue */
+    --card-bg: #1e293b;        /* Slate Blue */
+    --primary-blue: #38bdf8;   /* Sky Blue Accent */
+    --danger-red: #f43f5e;     /* Warning Red */
+    --success-green: #10b981;  /* Safe Green */
+    --text-white: #f8fafc;
+    --text-dim: #94a3b8;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--primary-blue);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: var(--primary-blue);
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--text-white);
+    text-shadow: 0 0 10px var(--primary-blue);
+}
+
+/* Container & Cards */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(56, 189, 248, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+input[type="text"] {
+    width: 75%;
+    padding: 15px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: var(--primary-blue);
+    outline: none;
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+}
+
+button {
+    padding: 15px 30px;
+    background: var(--primary-blue);
+    color: var(--bg-dark);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: var(--text-white);
+    transform: translateY(-2px);
+}
+
+/* Results Display */
+.result-danger {
+    background: rgba(244, 63, 94, 0.1);
+    border-left: 5px solid var(--danger-red);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.result-success {
+    background: rgba(16, 185, 129, 0.1);
+    border-left: 5px solid var(--success-green);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Table Styling (DBMS) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #111827;
+}
+
+th {
+    background: var(--primary-blue);
+    color: var(--bg-dark);
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #1e293b;
+    color: var(--text-dim);
+}
+
+tr:hover {
+    background: rgba(56, 189, 248, 0.05);
+}
